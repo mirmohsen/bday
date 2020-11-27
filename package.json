@@ -1,0 +1,33 @@
+{
+    "name": "bday",
+    "version": "1.0.0",
+    "description": "This program is a birthday history",
+    "main": "app.js",
+    "bin": {
+        "bday": "index.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint .",
+        "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
+    },
+    "pre-commit": [
+        "precommit-msg",
+        "lint"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sajadadineh"
+    },
+    "author": "sajad and mohsen",
+    "license": "MIT",
+    "dependencies": {
+        "leveldown": "^5.6.0",
+        "levelup": "^4.4.0",
+        "pre-commit": "^1.2.2"
+    },
+    "devDependencies": {
+        "eslint": "^7.14.0",
+        "prettier": "^2.2.0"
+    }
+}
